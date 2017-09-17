@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+	<style type="text/css">
+	span{
+		cursor: pointer;
+	}
+	#box{
+		width: 100px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		border: 1px solid red;
+		color: red;
+		display: none;
+	}
+
+
+	</style>
+</head>
+<body>
+	name:<input type="text"/><br/>
+	password:<input type="password"><br/>
+	<input type="checkbox"> <span id="text">you can't do it!</span>;
+	<div id="box">18 can't!!!</div>
+	
+
+
+	<script type="text/javascript">
+		var oSpan = document.getElementById('text');
+		var oBox =  document.getElementById('box');
+		oSpan.onmouseover = function () {
+			oBox.style.display="block";
+		}
+		oSpan.onmouseout = function (){
+			oBox.style.display="none";
+		}
+
+
+
+
+	</script>
+</body>
+</html>
